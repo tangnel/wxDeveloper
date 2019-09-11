@@ -1,0 +1,7 @@
+<!--pages/home/home.wxml-->
+<!-- <text>pages/home/home.wxml</text> -->
+<view class="container">
+<image src="../../images/pic.jpg"></image>
+<text class="name">未闻花名</text>
+<text class="welcome" bindtap="toWelcome">welcome!</text>
+</view>

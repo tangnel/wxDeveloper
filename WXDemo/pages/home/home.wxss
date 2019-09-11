@@ -1,0 +1,29 @@
+/* pages/home/home.wxss */
+page{
+  background-color: #00b26a;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+    align-items: center;
+}
+
+.container image{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+}
+
+.name{
+  margin-top:30px;
+  color:#666;
+  font-size: 14px;
+  letter-spacing: 20px;
+}
+
+.welcome{
+  margin-top:50px;
+  padding: 10px;
+  border:1px solid #000;
+}

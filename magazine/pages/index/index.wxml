@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+<image src="/image/pic.jpg"></image>
+<text class="name">未闻花名</text>
+<text class="welcome" bindtap="toWelcome">欢迎进入轻芒杂志~~</text>
+</view>

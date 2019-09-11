@@ -1,0 +1,28 @@
+page{
+  background-color: #00b26a;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top:40rpx;
+    align-items: center;
+}
+
+.container image{
+    width:80rpx;
+    height:80rpx;
+    border-radius: 50%;
+}
+
+.name{
+  margin-top:50rpx;
+  color:#666;
+  font-size: 28rpx;
+  letter-spacing: 10rpx;
+}
+
+.welcome{
+  margin-top:100rpx;
+  padding: 20rpx 40rpx;
+  border:1px solid #000;
+}

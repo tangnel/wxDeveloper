@@ -1,0 +1,21 @@
+/* pages/welcome/welcome.wxss */
+.wel-container{
+  display: flex;
+  flex-direction: column;
+  padding:0 10rpx;
+}
+.wel-container image{
+  width:100%;
+}
+.article{
+  line-height: 64rpx;
+  margin-top:10rpx;
+  letter-spacing: 4rpx;
+  width: 20em;
+  font-size: 36rpx;
+  align-self: center;
+}
+.bookName{
+  text-align: right;
+  margin-top:20rpx;
+}

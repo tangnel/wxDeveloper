@@ -1,0 +1,30 @@
+<!--pages/type/type.wxml-->
+<view class="top-container">
+  <image src="{{articleType.imgSrc}}" />
+  <view class="artcicle-type">
+    <text>{{articleType.title}}</text>
+    <view class="icon-box float-right">
+        <image class="share-article" src="/image/list/article/icon/Icon_relay.png"/>
+        <image class="option-more" src="/image/list/article/icon/Icon_more.png"/>
+      </view>
+  </view>
+</view>
+<view class="article-list" wx:for="{{articleTypeInfo}}" wx:key="{{id}}" data-articleId="{{item.id}}" bindtap="onTap">
+  <view class="author">
+    <image src="{{item.markPeopleAvatar}}" class="author-photo"/>
+    <text class="markNum">{{item.markPeople}}等{{item.markCount}}人马克了</text>
+  </view>
+  <image class="article-image" src="{{item.articleImgSrc}}" mode="widthFix" />
+  <view class="article-option">
+    <text class="article-title">{{item.articleTitle}}</text>
+    <view class="article-btns">
+      <text class="release-date">{{item.publishTime}}</text>
+      <view class="icon-box">
+        <image class="option-more" src="/image/list/article/icon/Icon_more.png"/>
+        <image class="share-article" src="/image/list/article/icon/Icon_relay.png"/>
+        <image class="i-like" src="/image/list/article/icon/Icon_circle.png" />
+      </view>
+    </view>
+  </view>
+</view>
+

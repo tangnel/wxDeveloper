@@ -1,0 +1,50 @@
+<!--pages/list/list.wxml-->
+<view class="home-container">
+  <view class="introduction-box">
+    <text class="recommend-date">{{recommend.date}}</text>
+    <text class="recommend-comm">{{recommend.title}}</text>
+    <image src="{{recommend.imgSrc}}" mode="widthFix" />
+  </view>
+  <view class="mark-box">
+    <text class="add-mark">+</text>
+    <text wx:for="{{markType}}" wx:key="{{typeId}}" bindtap="onArticleTypeTap" data-articleTypeId="{{item.typeId}}">{{item.type}}</text>
+    <text>...</text>
+  </view>
+</view>
+<view class="article-list" wx:for="{{articleList}}" wx:key="{{id}}">
+  <view class="author">
+    <image src="{{item.markPeopleAvatar}}" class="author-photo"/>
+    <text class="markNum">{{item.markPeople}}等{{item.markCount}}人马克了</text>
+  </view>
+  <image class="article-image" src="{{item.articleImgSrc}}" mode="widthFix" />
+  <view class="article-option">
+    <text class="article-title">{{item.articleTitle}}</text>
+    <view class="article-btns">
+      <text class="read-articel">{{item.articleType}}</text>
+      <view class="icon-box">
+        <image bindtap="onMoreTap" data-articleType="{{item.articleType}}" src="/image/list/article/icon/Icon_more.png"/>
+        <button class="shareBtn" open-type="share"><image bindtap="onShareTap" src="/image/list/article/icon/Icon_relay.png"/></button>
+        <image wx:if="{{listLike[index]}}" bindtap="onLikeTap" data-articleIndex="{{index}}" src="/image/list/article/icon/Icon_circle_fill.png" />
+        <image wx:else bindtap="onLikeTap" data-articleIndex="{{index}}" src="/image/list/article/icon/Icon_circle.png" />
+      </view>
+    </view>
+  </view>
+</view>
+<!-- <view class="article-list">
+  <view class="author">
+    <image src="/image/list/recommend-image.png" class="author-photo"/>
+    <text class="markNum">nefly等33人马克了</text>
+  </view>
+  <image class="article-image" src="/image/list/article/1.png" mode="widthFix" />
+  <view class="article-option">
+    <text class="article-title">不伦之吻？《吻》背后令人惊讶的往事</text>
+    <view class="article-btns">
+      <text class="read-articel">深度阅读</text>
+      <view class="icon-box">
+        <image class="option-more" src="/image/list/article/icon/Icon_more.png"/>
+        <image class="share-article" src="/image/list/article/icon/Icon_relay.png"/>
+        <image class="i-like" src="/image/list/article/icon/Icon_circle.png" />
+      </view>
+    </view>
+  </view>
+</view> -->

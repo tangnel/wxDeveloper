@@ -1,0 +1,117 @@
+/* pages/list/list.wxss */
+page{
+  background-color: #eee;
+}
+.home-container{
+  padding:0 24rpx 20rpx 24rpx;
+  width: 702rpx;
+  background-color: #fff;
+}
+.introduction-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recommend-date{
+  font-size: 50rpx;
+  letter-spacing: 10rpx;
+  padding: 20rpx 0;
+  position: relative;
+}
+.recommend-date::after{
+  content: "";
+  display: block;
+  position: absolute;
+  left:60rpx;
+  bottom:0rpx;
+  width:114rpx;
+  height:4rpx;
+  background-color: #999;
+}
+
+.recommend-comm{
+  padding:30rpx 0 40rpx 0;
+  font-size:26rpx;
+}
+.introduction-box image{
+  width:100%;
+}
+.mark-box text{
+  border:1px solid #666;
+  padding:14rpx 20rpx;
+  display: inline-block;
+  margin:40rpx 20rpx 0 0;
+  font-size:28rpx;
+}
+.add-mark{
+  background-color: #000;
+  color:#fff;
+}
+/* 文章列表样式 */
+.article-list{
+  width:690rpx;
+  margin:30rpx;
+  background-color: #fff;
+  
+}
+.author{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 20rpx 30rpx 30rpx 30rpx;
+}
+.author-photo{
+  width:60rpx;
+  height:60rpx;
+  border-radius: 50%;
+}
+.markNum{
+  color:#999;
+  margin-left:20rpx;
+  font-size: 24rpx;
+}
+.article-image{
+  width:100%;
+}
+.article-option{
+  padding:20rpx;
+  background-color: #fff;
+  margin: 0;
+}
+.article-title{
+  /* margin: 40rpx 20rpx; */
+}
+.article-btns{
+  margin-top: 40rpx;
+  display: flex;
+  justify-content:space-between;
+}
+.read-articel{
+  font-size:28rpx;
+  border:1px solid #666;
+  padding:14rpx 20rpx;
+}
+.icon-box{
+  display: flex;
+}
+.icon-box image{
+  width:50rpx;
+  height: 50rpx;
+  margin-left:20rpx;
+}
+.shareBtn{
+  width:50rpx;
+  height: 50rpx;
+  background-color: transparent;
+  padding:0;
+  position:relative;
+  bottom:8rpx;
+  margin-left:10rpx;
+}
+.shareBtn::after{
+  border: none;
+}
+.shareBtn image{
+  margin-left: 0;
+}

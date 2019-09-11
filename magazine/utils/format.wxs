@@ -1,0 +1,8 @@
+var format = function(second){
+    var miniute = parseInt(second / 60);
+    miniute = miniute < 10 ? "0"+miniute : miniute;
+    var second = second % 60;
+    second = second < 10 ? "0"+second : second;
+    return miniute +":"+second;
+  }
+  module.exports = format;

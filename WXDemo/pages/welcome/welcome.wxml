@@ -1,0 +1,7 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="wel-container">
+<image src="../../images/bg.jpg" mode="widthFix"></image>
+<text class="article">现在是一段测试代码内容随便写什么来填充未两行倒数开始十九八七六五四三二一</text>
+<text class="bookName">----摘入自哪里</text>
+</view>
+
